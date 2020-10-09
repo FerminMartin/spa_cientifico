@@ -4,9 +4,11 @@
   "description": "Single Page Aplication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build":"webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
   },
   "keywords": [
+    "single page aplication",
     "javascript"
   ],
   "author": "fermin",
@@ -18,5 +20,8 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "production": "0.0.2"
   }
 }
