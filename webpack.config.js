@@ -10,7 +10,7 @@ module.exports = {
     resolve: {
         extensions: ['.js'],
     },
-    //SETTING BABLE RULES
+    //SETTING BABEL RULES
     module: {
         rules: [
             {
@@ -25,12 +25,12 @@ module.exports = {
     },
     //SETTING PLUGINS
     plugins: [
-        new HtmlWebpackPlugin([
+        new HtmlWebpackPlugin(
             {
                 inject: true,
                 template: './public/index.html',
                 filename: './index.html',
             }
-        ])
+        )
     ]
 }
